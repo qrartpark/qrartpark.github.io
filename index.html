@@ -37,15 +37,21 @@
         <!-- we add detectionMode and matrixCodeType to tell AR.js to recognize barcode markers -->
         <a-scene embedded vr-mode-ui="enabled: false" arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;" gltf-model="dracoDecoderPath: https://www.gstatic.com/draco/v1/decoders/;">
 
+          <a-assets>
+            <video id="guidance" autoplay loop="true" src="1.mp4"></video>
+            <video id="breath1" autoplay loop="true" src="2.mp4"></video>
+            <video id="breath2" autoplay loop="true" src="3.mp4"></video>
+            <video id="expanse" autoplay loop="true" src="4.mp4"></video>
+            <video id="longing" autoplay loop="true" src="5.mp4"></video>
+          </a-assets>
+
               <a-marker type='barcode' value='1'
               smooth="true"
               smoothCount="10"
               smoothTolerance=".01"
               smoothThreshold="5">
-              <a-image src="image-1.png" rotation="90 0 0" height="4" width="7.02" 
-              animation="property: scale; to: 1 1 1; dur: 750; delay: 500" />
-              <a-plane color=green rotation="90 0 0" position="6" height="2" width="6" 
-              animation="property: scale; to: 1 1 1; dur: 750; delay: 1500" />
+              
+                <a-video src="#guidance" rotation="-90 0 0"  width="9.6" height="5.4" position="0 0 0"></a-video>
               </a-marker>
         
               <a-marker type='barcode' value='2' video-vidhandler 
@@ -53,7 +59,7 @@
               smoothCount="10"
               smoothTolerance=".01"
               smoothThreshold="5">
-                  <a-image src="image-2.png" rotation="90 0 0" height="4" width="7.02" />
+              <a-video src="#breath1" rotation="-90 0 0"  width="5.4" height="9.6" position="0 0 0"></a-video>
               </a-marker>
         
               <a-marker type='barcode' value='3' video-vidhandler 
@@ -61,7 +67,7 @@
               smoothCount="10"
               smoothTolerance=".01"
               smoothThreshold="5">
-                  <a-image src="image-3.png" rotation="90 0 0" height="4" width="7.02" />
+              <a-video src="#breath2" rotation="-90 0 0"  width="9.6" height="5.4" position="0 0 0"></a-video>
               </a-marker>
         
               <a-marker type='barcode' value='4' video-vidhandler 
@@ -69,7 +75,7 @@
               smoothCount="10"
               smoothTolerance=".01"
               smoothThreshold="5">
-                  <a-image src="image-4.png" rotation="90 0 0" height="4" width="7.02" />
+              <a-video src="#expanse" rotation="-90 0 0"  width="5.4" height="9.6" position="0 0 0"></a-video>
               </a-marker>
         
               <a-marker type='barcode' value='5' video-vidhandler 
@@ -77,7 +83,7 @@
               smoothCount="10"
               smoothTolerance=".01"
               smoothThreshold="5">
-                  <a-image src="image-5.png" rotation="90 0 0" height="4" width="7.02" />
+              <a-video src="#longing" rotation="-90 0 0"  width="9.6" height="5.4" position="0 0 0"></a-video>
               </a-marker>
 
         <a-entity camera></a-entity>
