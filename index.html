@@ -31,7 +31,7 @@
             this.toggle = false;
                 var arrayLength = this.vids.length;
                 for (var i = 0; i < arrayLength; i++) {
-                  this.vids[i].pause();
+                  this.vids[i].stop();
                 }
           }
         }
@@ -57,7 +57,7 @@
               smoothTolerance=".01"
               smoothThreshold="5">
               
-                <a-video src="#guidance" rotation="-90 0 0"  width="9.6" height="5.4" position="0 0 0"></a-video>
+                <a-plane material="src:#guidance" rotation="-90 0 0"  width="9.6" height="5.4" position="0 0 0"></a-video>
               </a-marker>
         
               <a-marker type='barcode' value='2' video-handler
@@ -65,7 +65,7 @@
               smoothCount="10"
               smoothTolerance=".01"
               smoothThreshold="5">
-                <a-video src="#breath1" rotation="-90 0 0"  width="5.4" height="9.6" position="0 0 0"></a-video>
+                <a-plane material="src:#breath1" rotation="-90 0 0"  width="5.4" height="9.6" position="0 0 0"></a-video>
               </a-marker>
         
               <a-marker type='barcode' value='3' video-handler
@@ -73,7 +73,7 @@
               smoothCount="10"
               smoothTolerance=".01"
               smoothThreshold="5">
-                <a-video src="#breath2" rotation="-90 0 0"  width="9.6" height="5.4" position="0 0 0"></a-video>
+                <a-plane material="src:#breath2" rotation="-90 0 0"  width="9.6" height="5.4" position="0 0 0"></a-video>
               </a-marker>
         
               <a-marker type='barcode' value='4' video-handler
@@ -81,7 +81,7 @@
               smoothCount="10"
               smoothTolerance=".01"
               smoothThreshold="5">
-                <a-video src="#expanse" rotation="-90 0 0"  width="5.4" height="9.6" position="0 0 0"></a-video>
+                <a-plane material="src:#expanse" rotation="-90 0 0"  width="5.4" height="9.6" position="0 0 0"></a-video>
               </a-marker>
         
               <a-marker type='barcode' value='5' video-handler
@@ -89,7 +89,7 @@
               smoothCount="10"
               smoothTolerance=".01"
               smoothThreshold="5">
-                <a-video src="#longing" rotation="-90 0 0"  width="9.6" height="5.4" position="0 0 0"></a-video>
+                <a-plane material="src:#longing" rotation="-90 0 0"  width="9.6" height="5.4" position="0 0 0"></a-video>
               </a-marker>
 
         <a-entity camera></a-entity>
