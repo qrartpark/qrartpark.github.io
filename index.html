@@ -43,12 +43,12 @@
         <!-- we add detectionMode and matrixCodeType to tell AR.js to recognize barcode markers -->
         <a-scene embedded vr-mode-ui="enabled: false" arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;">
 
-          <a-assets>
-            <video id="guidance" autoplay loop="true" src="1.mp4"></video>
-            <video id="breath1" autoplay loop="true" src="2.mp4"></video>
-            <video id="breath2" autoplay loop="true" src="3.mp4"></video>
-            <video id="expanse" autoplay loop="true" src="4.mp4"></video>
-            <video id="longing" autoplay loop="true" src="5.mp4"></video>
+          <a-assets timeout="10000">
+            <video id="guidance" autoplay loop="true" src="1.mp4" preload="auto"></video>
+            <video id="breath1" autoplay loop="true" src="2.mp4" preload="auto"></video>
+            <video id="breath2" autoplay loop="true" src="3.mp4" preload="auto"></video>
+            <video id="expanse" autoplay loop="true" src="4.mp4" preload="auto"></video>
+            <video id="longing" autoplay loop="true" src="5.mp4" preload="auto"></video>
           </a-assets>
 
               <a-marker type='barcode' value='1' video-handler
