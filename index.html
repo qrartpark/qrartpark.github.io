@@ -57,7 +57,7 @@
               smoothTolerance=".01"
               smoothThreshold="5">
               
-                <a-plane material="src:#guidance" rotation="-90 0 0"  width="9.6" height="5.4" position="0 0 0"></a-video>
+                <a-plane material="src:#guidance; shader:flat" rotation="-90 0 0"  width="9.6" height="5.4" position="0 0 0"></a-video>
               </a-marker>
         
               <a-marker type='barcode' value='2' video-handler
@@ -65,7 +65,7 @@
               smoothCount="10"
               smoothTolerance=".01"
               smoothThreshold="5">
-                <a-plane material="src:#breath1" rotation="-90 0 0"  width="5.4" height="9.6" position="0 0 0"></a-video>
+                <a-plane material="src:#breath1; shader:flat" rotation="-90 0 0"  width="5.4" height="9.6" position="0 0 0"></a-video>
               </a-marker>
         
               <a-marker type='barcode' value='3' video-handler
@@ -73,7 +73,7 @@
               smoothCount="10"
               smoothTolerance=".01"
               smoothThreshold="5">
-                <a-plane material="src:#breath2" rotation="-90 0 0"  width="9.6" height="5.4" position="0 0 0"></a-video>
+                <a-plane material="src:#breath2; shader:flat" rotation="-90 0 0"  width="9.6" height="5.4" position="0 2 0"></a-video>
               </a-marker>
         
               <a-marker type='barcode' value='4' video-handler
@@ -81,7 +81,7 @@
               smoothCount="10"
               smoothTolerance=".01"
               smoothThreshold="5">
-                <a-plane material="src:#expanse" rotation="-90 0 0"  width="5.4" height="9.6" position="0 0 0"></a-video>
+                <a-plane material="src:#expanse; shader:flat" rotation="-90 0 0"  width="5.4" height="9.6" position="0 0 0"></a-video>
               </a-marker>
         
               <a-marker type='barcode' value='5' video-handler
@@ -89,7 +89,15 @@
               smoothCount="10"
               smoothTolerance=".01"
               smoothThreshold="5">
-                <a-plane material="src:#longing" rotation="-90 0 0"  width="9.6" height="5.4" position="0 0 0"></a-video>
+                <a-plane material="src:#longing; shader:flat" rotation="-90 0 0"  width="9.6" height="5.4" position="0 2 0"></a-video>
+              </a-marker>
+        
+              <a-marker type='barcode' value='6' video-handler
+              smooth="true"
+              smoothCount="10"
+              smoothTolerance=".01"
+              smoothThreshold="5">
+                <a-plane material="src:#longing; shader:flat" rotation="-90 0 0"  width="9.6" height="5.4" position="0 2 0"></a-video>
               </a-marker>
 
         <a-entity camera></a-entity>
