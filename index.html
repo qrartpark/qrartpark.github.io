@@ -11,17 +11,17 @@
     <script>
       AFRAME.registerComponent('vidhandler1', {
         init: function () {
-          this.toggle = false;
+          this.toggle1 = false;
           document.querySelector("#guidance").pause();
         },
         tick:function(){  
           if(document.querySelector("#marker1").object3D.visible == true){
-            if(!this.toggle){
-              this.toggle = true;
+            if(!this.toggle1){
+              this.toggle1 = true;
               document.querySelector("#guidance").play();
             }
           }else{
-            this.toggle = false;
+            this.toggle1 = false;
             document.querySelector("#guidance").pause();
           }
         }
@@ -29,17 +29,17 @@
       
       AFRAME.registerComponent('vidhandler2', {
         init: function () {
-          this.toggle = false;
+          this.toggle2 = false;
           document.querySelector("#breath1").pause();
         },
         tick:function(){  
           if(document.querySelector("#marker2").object3D.visible == true){
-            if(!this.toggle){
-              this.toggle = true;
+            if(!this.toggle2){
+              this.toggle2 = true;
               document.querySelector("#breath1").play();
             }
           }else{
-            this.toggle = false;
+            this.toggle2 = false;
             document.querySelector("#breath1").pause();
           }
         }
@@ -47,17 +47,17 @@
       
       AFRAME.registerComponent('vidhandler3', {
         init: function () {
-          this.toggle = false;
+          this.toggle3 = false;
           document.querySelector("#breath2").pause();
         },
         tick:function(){  
           if(document.querySelector("#marker3").object3D.visible == true){
-            if(!this.toggle){
-              this.toggle = true;
+            if(!this.toggle3){
+              this.toggle3 = true;
               document.querySelector("#breath2").play();
             }
           }else{
-            this.toggle = false;
+            this.toggle3 = false;
             document.querySelector("#breath2").pause();
           }
         }
@@ -65,17 +65,17 @@
       
       AFRAME.registerComponent('vidhandler4', {
         init: function () {
-          this.toggle = false;
+          this.toggle4 = false;
           document.querySelector("#expanse").pause();
         },
         tick:function(){  
           if(document.querySelector("#marker4").object3D.visible == true){
-            if(!this.toggle){
-              this.toggle = true;
+            if(!this.toggle4){
+              this.toggle4 = true;
               document.querySelector("#expanse").play();
             }
           }else{
-            this.toggle = false;
+            this.toggle4 = false;
             document.querySelector("#expanse").pause();
           }
         }
@@ -83,17 +83,17 @@
       
       AFRAME.registerComponent('vidhandler5', {
         init: function () {
-          this.toggle = false;
+          this.toggle5 = false;
           document.querySelector("#longing").pause();
         },
         tick:function(){  
           if(document.querySelector("#marker5").object3D.visible == true){
-            if(!this.toggle){
-              this.toggle = true;
+            if(!this.toggle5){
+              this.toggle5 = true;
               document.querySelector("#longing").play();
             }
           }else{
-            this.toggle = false;
+            this.toggle5 = false;
             document.querySelector("#longing").pause();
           }
         }
@@ -101,17 +101,17 @@
       
       AFRAME.registerComponent('vidhandler6', {
         init: function () {
-          this.toggle = false;
+          this.toggle6 = false;
           document.querySelector("#longing").pause();
         },
         tick:function(){  
           if(document.querySelector("#marker6").object3D.visible == true){
-            if(!this.toggle){
-              this.toggle = true;
+            if(!this.toggle6){
+              this.toggle6 = true;
               document.querySelector("#longing").play();
             }
           }else{
-            this.toggle = false;
+            this.toggle6 = false;
             document.querySelector("#longing").pause();
           }
         }
