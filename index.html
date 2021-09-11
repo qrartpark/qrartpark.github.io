@@ -3,7 +3,7 @@
     <head>
         <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
         <meta name="apple-mobile-web-app-capable" content="yes">
-        <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+        <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
         <script src="https://raw.githack.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
         <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
     </head>
@@ -11,31 +11,18 @@
     <script>
 
       // Invitation Video Handler
-                
-      AFRAME.registerComponent('video-vidhandler', {
-        init: function() {
-          this.toggle = false;
-          this.vids = [document.querySelector("#guidance"),document.querySelector("#breath1"),document.querySelector("#breath2"),document.querySelector("#expanse"),document.querySelector("#longing")];
-          this.vid.pause();
-        },
-        tick: function() {
-          if (this.el.object3D.visible == true) {
-            if (!this.toggle) {
-                this.toggle = true;
-                var arrayLength = this.vids.length;
-                for (var i = 0; i < arrayLength; i++) {
-                  this.vids[i].play();
-                }
-            }
-          } else {
-            this.toggle = false;
-                var arrayLength = this.vids.length;
-                for (var i = 0; i < arrayLength; i++) {
-                  this.vids[i].stop();
-                }
-          }
-        }
-      });
+      var videoNames = ["#guidance", "#breath1", "#breath2", "#expanse", "#longing"]
+
+      function delayedPlay() {
+        document.querySelector("#guidance").play();
+        document.querySelector("#breath1").play();
+        document.querySelector("#breath2").play();
+        document.querySelector("#expanse").play();
+        document.querySelector("#longing").play();
+		  };
+      
+      window.addEventListener('load', delayedPlay);
+      window.addEventListener('mouseup', delayedPlay);
     
     </script>
 
