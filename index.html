@@ -6,6 +6,31 @@
         <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
         <script src="https://raw.githack.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
         <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
+        <style>
+          body {
+              background: #3498db;
+              font-family: sans-serif;
+          }
+          h1 {
+              position: relative;
+              color: rgba(0, 0, 0, .3);
+              font-size: 5em
+          }
+          h1:before {
+              content: attr(data-text);
+              position: absolute;
+              overflow: hidden;
+              max-width: 7em;
+              white-space: nowrap;
+              color: #fff;
+              animation: loading 8s linear;
+          }
+          @keyframes loading {
+              0% {
+                  max-width: 0;
+              }
+          }
+        </style>
     </head>
     
     <script>
@@ -182,5 +207,6 @@
 
         <a-entity camera></a-entity>
         </a-scene>
+        <h1 data-text="It's loading…">It's loading…</h1>
     </body>
 </html>
