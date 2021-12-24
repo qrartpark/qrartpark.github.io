@@ -37,18 +37,18 @@
       AFRAME.registerComponent('vidhandler1', {
         init: function () {
           this.toggle1 = false;
-          document.querySelector("#1VisitFromSaintNick").pause();
+          document.querySelector("#marker1").pause();
         },
         tick:function(){  
           if(document.querySelector("#marker1").object3D.visible == true){
             if(!this.toggle1){
               this.toggle1 = true;
-              document.querySelector("#1VisitFromSaintNick").play();
+              document.querySelector("#marker1").play();
               console.log('play 1VisitFromSaintNick')
             }
           }else{
             this.toggle1 = false;
-            document.querySelector("#1VisitFromSaintNick").pause();
+            document.querySelector("#marker1").pause();
           }
         }
       });
@@ -56,18 +56,18 @@
       AFRAME.registerComponent('vidhandler2', {
         init: function () {
           this.toggle2 = false;
-          document.querySelector("#2VisitFromSaintNick").pause();
+          document.querySelector("#marker2").pause();
         },
         tick:function(){  
           if(document.querySelector("#marker2").object3D.visible == true){
             if(!this.toggle2){
               this.toggle2 = true;
-              document.querySelector("#2VisitFromSaintNick").play();
+              document.querySelector("#marker2").play();
               console.log('play 2VisitFromSaintNick')
             }
           }else{
             this.toggle2 = false;
-            document.querySelector("#2VisitFromSaintNick").pause();
+            document.querySelector("#marker2").pause();
           }
         }
       });
@@ -75,18 +75,18 @@
       AFRAME.registerComponent('vidhandler3', {
         init: function () {
           this.toggle3 = false;
-          document.querySelector("#3VisitFromSaintNick").pause();
+          document.querySelector("#marker3").pause();
         },
         tick:function(){  
           if(document.querySelector("#marker3").object3D.visible == true){
             if(!this.toggle3){
               this.toggle3 = true;
-              document.querySelector("#3VisitFromSaintNick").play();
+              document.querySelector("#marker3").play();
               console.log('play 3VisitFromSaintNick')
             }
           }else{
             this.toggle3 = false;
-            document.querySelector("#3VisitFromSaintNick").pause();
+            document.querySelector("#marker3").pause();
           }
         }
       });
@@ -94,18 +94,18 @@
       AFRAME.registerComponent('vidhandler4', {
         init: function () {
           this.toggle4 = false;
-          document.querySelector("#4VisitFromSaintNick").pause();
+          document.querySelector("#marker4").pause();
         },
         tick:function(){  
           if(document.querySelector("#marker4").object3D.visible == true){
             if(!this.toggle4){
               this.toggle4 = true;
-              document.querySelector("#4VisitFromSaintNick").play();
+              document.querySelector("#marker4").play();
               console.log('play 4VisitFromSaintNick')
             }
           }else{
             this.toggle4 = false;
-            document.querySelector("#4VisitFromSaintNick").pause();
+            document.querySelector("#marker4").pause();
           }
         }
       });
@@ -113,18 +113,18 @@
       AFRAME.registerComponent('vidhandler5', {
         init: function () {
           this.toggle5 = false;
-          document.querySelector("#5VisitFromSaintNick").pause();
+          document.querySelector("#marker5").pause();
         },
         tick:function(){  
           if(document.querySelector("#marker5").object3D.visible == true){
             if(!this.toggle5){
               this.toggle5 = true;
-              document.querySelector("#5VisitFromSaintNick").play();
+              document.querySelector("#marker5").play();
               console.log('play 5VisitFromSaintNick')
             }
           }else{
             this.toggle5 = false;
-            document.querySelector("#5VisitFromSaintNick").pause();
+            document.querySelector("#marker5").pause();
           }
         }
       });
