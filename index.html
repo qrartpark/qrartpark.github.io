@@ -133,7 +133,7 @@
 
     <body style='margin : 0px; overflow: hidden;'>
         <!-- we add detectionMode and matrixCodeType to tell AR.js to recognize barcode markers -->
-        <a-scene embedded vr-mode-ui="enabled: false" arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: true; detectionMode: mono_and_matrix; matrixCodeType: 3x3; patternratio:0.75">
+        <a-scene embedded vr-mode-ui="enabled: false" arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: true; matrixCodeType: 3x3; patternratio:0.75">
 
           <a-assets timeout="15000">
             <video id="nick1" muted loop="true" src="1VisitFromSaintNick.mp4" defaultplaybackrate="1.0"></video>
@@ -143,9 +143,9 @@
             <video id="nick5" muted loop="true" src="5VisitFromSaintNick.mp4" defaultplaybackrate="1.0"></video>
           </a-assets>
 
-              <a-marker type="barcode" value="1" id="marker1" size="0.3" vidhandler1
+              <a-marker id="marker1" type="barcode" value="1" size="0.3" vidhandler1
               smooth="true"
-              smoothCount="0"
+              smoothCount="10"
               smoothTolerance=".01"
               smoothThreshold="5">
               
@@ -157,7 +157,7 @@
               smoothCount="10"
               smoothTolerance=".01"
               smoothThreshold="5">
-              <a-plane material="src:#nick2; shader:flat" rotation="-90 0 0"  width="6.9" height="3.38" position="0 0 0"></a-plane>
+                <a-plane material="src:#nick2; shader:flat" rotation="-90 0 0"  width="6.9" height="3.38" position="0 0 0"></a-plane>
               </a-marker>
         
               <a-marker type="barcode" value="3" id="marker3" size="0.3" vidhandler3
@@ -165,7 +165,7 @@
               smoothCount="10"
               smoothTolerance=".01"
               smoothThreshold="5">
-              <a-plane material="src:#nick3; shader:flat" rotation="-90 0 0"  width="6.9" height="3.38" position="0 0 0"></a-plane>
+                <a-plane material="src:#nick3; shader:flat" rotation="-90 0 0"  width="6.9" height="3.38" position="0 0 0"></a-plane>
               </a-marker>
         
               <a-marker type="barcode" value="4" id="marker4" size="0.3" vidhandler4
@@ -173,7 +173,7 @@
               smoothCount="10"
               smoothTolerance=".01"
               smoothThreshold="5">
-              <a-plane material="src:#nick4; shader:flat" rotation="-90 0 0"  width="6.9" height="3.38" position="0 0 0"></a-plane>
+                <a-plane material="src:#nick4; shader:flat" rotation="-90 0 0"  width="6.9" height="3.38" position="0 0 0"></a-plane>
               </a-marker>
         
               <a-marker type="barcode" value="5" id="marker5" size="0.3" vidhandler5
@@ -181,8 +181,9 @@
               smoothCount="10"
               smoothTolerance=".01"
               smoothThreshold="5">
-              <a-plane material="src:#nick5; shader:flat" rotation="-90 0 0"  width="6.9" height="3.38" position="0 0 0"></a-plane>
+                <a-plane material="src:#nick5; shader:flat" rotation="-90 0 0"  width="6.9" height="3.38" position="0 0 0"></a-plane>
               </a-marker>
+
         <a-entity camera></a-entity>
         </a-scene>
         <h1 data-text="I'm loading…">I'm loading…</h1>
